@@ -1,0 +1,29 @@
+{
+  "name": "real-time_game",
+  "version": "1.0.0",
+  "description": "built with SocketIO, Gulp, and Node",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lee-yun-pyo/Real-time_Game.git"
+  },
+  "author": "leeyunpyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lee-yun-pyo/Real-time_Game/issues"
+  },
+  "homepage": "https://github.com/lee-yun-pyo/Real-time_Game#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "nodemon": "^2.0.12"
+  }
+}
