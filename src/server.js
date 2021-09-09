@@ -27,8 +27,14 @@ let sockets = [];
 io.on("connection", (socket) => {
     socket.emit("hello")
 
-    socket.on("hi", () => console.log("Hi"));
-})
+    socket.on("newMessage", ({ message }) => {
+        socket.broadcast.emit("messageNoti", { message, nickname: socket.nickname || "Ann" })
+    });
+
+    socket.on("newNickname", ({ nickname }) => {
+        socket.nickname = nickname;
+    })
+});
 // 연결된 socket 정보가 필요함
 // socket: request 객체 
 // socket은 항상 서버의 이벤트를 듣고 있음 
