@@ -1,2 +1,1 @@
-body {
-  background-color: tomato; }
+@-webkit-keyframes changeColor{0%{color:red}to{color:#00f}}@keyframes changeColor{0%{color:red}to{color:#00f}}body{background-color:tomato}
